@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.piano.tech.pro"
+    android:versionCode="3"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+    
+   	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WIFI"/>
+      
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.piano.tech.pro.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation = "portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.piano.tech.pro.Manufactures"
+            android:label="Manufacture"
+            android:screenOrientation = "portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Manufactures" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.piano.tech.pro.Serial"
+            android:label="Serial"
+            android:screenOrientation = "portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Serial" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.piano.tech.pro.Schematics"
+            android:label="Schematics"
+            android:screenOrientation = "portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Schematics" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.piano.tech.pro.SchematicsDiagrams"
+            android:label="SchematicsDiagrams"
+            android:screenOrientation = "portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SchematicsDiagrams" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.piano.tech.pro.TemperatureChart"
+            android:label="Temperature/Humidity Chart"
+            android:screenOrientation = "portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.TemperatureChart" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.piano.tech.pro.Tanks"
+            android:label="Tanks, Humidistats, and Filling Info"
+            android:screenOrientation = "portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Thanks" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.piano.tech.pro.InfoContact"
+            android:label="Info / Contact"
+            android:screenOrientation = "portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.InfoContact" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>

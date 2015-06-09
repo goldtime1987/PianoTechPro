@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/imageButton_Background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/cover"
+        android:contentDescription="@string/app_name"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:src="@drawable/btn_info"
+        android:onClick="onClickContactInfo"/>
+
+    <Button
+        android:id="@+id/button_SchematicDiagrams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_SerialNumber"
+        android:layout_alignRight="@+id/button_Temperature"
+        android:layout_below="@+id/button_SerialNumber"
+        android:layout_marginTop="18dp"
+        android:background="@color/button_color"
+        android:minHeight="30dp"
+        android:onClick="onClickSchematics"
+        android:text="@string/SchematicDiagram"
+        android:textSize="14sp" />
+    
+     <Button
+        android:id="@+id/button_Thanks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_Temperature"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="18dp"
+        android:background="@color/button_color"
+        android:minHeight="30dp"
+        android:onClick="onClickThanks"
+        android:text="@string/Thanks"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textSize="14sp" />
+
+     <Button
+         android:id="@+id/button_Website"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button_SerialNumber"
+         android:layout_alignRight="@+id/button_SchematicDiagrams"
+         android:layout_centerVertical="true"
+         android:background="@color/button_color"
+         android:minHeight="30dp"
+         android:onClick="onClickWebSite"
+         android:text="@string/Website"
+         android:textColor="#0000FF"
+         android:textSize="14sp" />
+
+     <Button
+         android:id="@+id/button_SerialNumber"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button_Temperature"
+         android:layout_alignRight="@+id/button_Temperature"
+         android:layout_below="@+id/button_Website"
+         android:layout_marginTop="18dp"
+         android:background="@color/button_color"
+         android:minHeight="30dp"
+         android:onClick="onClickSerialNumber"
+         android:text="@string/SerialNumber"
+         android:textSize="14sp" />
+
+     <Button
+         android:id="@+id/button_Temperature"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/button_SchematicDiagrams"
+         android:layout_alignLeft="@+id/button_Thanks"
+         android:layout_alignRight="@+id/button_Thanks"
+         android:layout_marginTop="18dp"
+         android:background="@color/button_color"
+         android:minHeight="30dp"
+         android:onClick="onClickTemperatureChart"
+         android:text="@string/TemperatureChart"
+         android:textSize="14sp" />
+
+</RelativeLayout>
